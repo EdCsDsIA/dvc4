@@ -1,0 +1,18 @@
+cmd: python src/train.py data/features model.pkl
+deps:
+- path: data/features
+  md5: aba1b6b3c807f7ffbb23566ea5f80c62.dir
+  size: 7083960
+  nfiles: 2
+- path: src/train.py
+  md5: 9ab95496b29b6ea3418bbf20b9fe3473
+  size: 964
+params:
+  params.yaml:
+    train.min_split: 2
+    train.n_est: 50
+    train.seed: 20170428
+outs:
+- path: model.pkl
+  md5: f8331a85d4dc4c5241ca4abdea58979a
+  size: 2664062
